@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,800&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    background-color: #92e1e2;
+   
+}
+
+.calc{
+    width:100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #92e1e2;
+    text-align: center;
+}
+
+.container {
+    width: 21.7%;
+    margin: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 2px 0px #747476;
+    background: linear-gradient(-45deg,#2e4fd2,#2e70d2,#2ea6d2,#62dbfc); 
+}
+
+
+.btns{
+    padding:1px;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row button, #eval{
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    margin: 4px;
+    border-radius: 15px;
+    transition: .1s;
+    box-shadow: 2px 5px 7px 0px #1a1a1b;
+}
+
+.row button:hover {
+    box-shadow: inset 3px 3px 5px rgba(140, 158, 194, 0.73),
+        inset -3px -3px 5px rgba(159, 173, 183, 0.809);
+    background: #fff;
+}
+
+.display #screen {
+    margin: .3em 5px .5em 5px;
+    width: 90.3%;
+    height: 65px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+
+#ac {
+    background: #38cc8c;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 3px 3px 5px #138956,
+        inset -3px -3px 5px #2e9f6e;
+}
+
+#ce {
+    background: #cfc619;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 3px 3px 5px #cfbb07,
+        inset -3px -3px 5px #f1e34b;
+}
+
+#eval {
+    background: #e48511;
+    color: #fff;
+    box-shadow: 2px 5px 7px 0px #1a1a1b;
+}
+
+#eval:hover {
+    box-shadow: inset 3px 3px 5px #c37b09,
+        inset -3px -3px 5px #cd852d;
+}
+
+
+.back{
+    font-size: 30px;
+    padding: 20px;
+    background-color: #92e1e2;
+    text-align: center;
+}
+
+#mainlink{
+    color: rgb(97, 6, 139);
+    text-decoration: none;
+}
+
+#mainlink:hover{
+    color: rgb(185, 12, 228);
+    text-decoration: underline;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+*::selection{
+    background-color: rgb(73, 146, 241);
+}
+
+body{
+    background: linear-gradient(45deg,#576182,#1fc5a8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.tdl{
+    margin-top: 30px;
+    width:450px;
+    padding:20px;
+    box-shadow: 0 10px 40px #0000007d;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.tdl-head{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    gap:20px;
+}
+
+.enter-items{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-items{
+    background-color: #1fc5a8;
+    border-radius: 20px;
+    font-size: 20px;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.add-items.active{
+    opacity:1;
+    pointer-events: all;
+}
+
+.task-list{
+    width:100%;
+    margin: 20px 0;
+}
+
+.task-items{
+    margin-top:7px;
+    padding: 10px;
+    border-radius:5px;
+    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.495);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-items .p{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.task-items.completed p{
+   
+    text-decoration: line-through;
+}
+
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#w1,#w2,#w3{
+    color:#576182;
+    font-size: 18px;
+}
+
+#w1:hover{
+    color:rgb(3, 3, 132);
+}
+#w2:hover{
+    color:rgb(78, 193, 78);
+}
+#w3:hover{
+    color: rgb(164, 18, 18);
+}
+
+#w2.completed{
+    color:rgb(48, 129, 48);
+}
+
+.back{
+
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 20px;
+    background-color: transparent;
+    text-align: center;
+}
+
+#mainlink{
+    color: rgb(97, 6, 139);
+    text-decoration: none;
+}
+
+#mainlink:hover{
+    color: rgb(185, 12, 228);
+    text-decoration: underline;
+}
